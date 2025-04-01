@@ -90,15 +90,15 @@ Sets the base path for OUs as DC=dinoland,DC=lan.
 - Checks for missing first name or last name and skips such entries.
 - Creates users with the specified attributes (name, email, password) if they do not already exist in AD.
 
-### Error Handling
+### 3. Error Handling
 
 - The script includes error handling for OU and user creation, with warnings and a pause of 5 seconds for errors.
 
-### Output
+### 4. Output
 
 - The script outputs the status of OU and user creation to the console, indicating success or any errors encountered.
 
-### Usage
+### 5. Usage
 
 1. Place the users.csv file in the specified directory (C:\scripts\Ad_scripts\).
 2. Ensure the script has the necessary permissions to create OUs and users in Active Directory.
