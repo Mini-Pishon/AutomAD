@@ -92,10 +92,14 @@ Sets the base path for OUs as DC=dinoland,DC=lan.
 
 ### Error Handling
 
-The script includes error handling for OU and user creation, with warnings and a pause of 5 seconds for errors.
-Output
-The script outputs the status of OU and user creation to the console, indicating success or any errors encountered.
-Usage
-Place the users.csv file in the specified directory (C:\scripts\Ad_scripts\).
-Ensure the script has the necessary permissions to create OUs and users in Active Directory.
-Execute the script in a PowerShell environment with the Active Directory module available.
+- The script includes error handling for OU and user creation, with warnings and a pause of 5 seconds for errors.
+
+### Output
+
+- The script outputs the status of OU and user creation to the console, indicating success or any errors encountered.
+
+### Usage
+
+1. Place the users.csv file in the specified directory (C:\scripts\Ad_scripts\).
+2. Ensure the script has the necessary permissions to create OUs and users in Active Directory.
+3. Execute the script in a PowerShell environment with the Active Directory module available.
