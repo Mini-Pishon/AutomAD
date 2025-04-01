@@ -49,24 +49,25 @@ This repository contains scripts to quickly and easily set up your Windows Serve
 
 # Injection
 
-## 1. AD_addusers.ps1
+## AD_addusers.ps1
 
 This PowerShell script automates the creation of Organizational Units (OUs) and users in Active Directory (AD) based on data from a CSV file. The script performs the following actions:
 
-1. Prerequisites
+### 1. Prerequisites
 
     - Ensure the Active Directory module is available on the system where the script is executed.
     - Prepare a CSV file (users.csv) with user data, including columns for first_name, last_name, and password.
 
-2. Script Overview
+### 2. Script Overview
 
-- Input
+#### - Input
     - CSV File: The script reads user data from C:\scripts\Ad_scripts\users.csv. Ensure the file is in the correct format and accessible.
-- Actions Performed
+#### - Actions Performed
     - Import CSV Data:
 
-Reads user data from the specified CSV file.
-Import Active Directory Module:
+    - Reads user data from the specified CSV file.
+
+#### - Import Active Directory Module:
 
 Imports the Active Directory module to manage AD operations.
 Define Base OU Path:
