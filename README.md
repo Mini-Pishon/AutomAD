@@ -56,9 +56,9 @@ This PowerShell script automates the creation of Organizational Units (OUs) and 
 
 ### 2. Usage
 
-1. Place the users.csv file in the same directory as the script or adapt the script to point to the correct location of the CSV file.
-2. Ensure the script has the necessary permissions to create OUs and users in Active Directory.
-3. Execute the script in a PowerShell environment with the Active Directory module available.
+- Place the users.csv file in the same directory as the script or adapt the script to point to the correct location of the CSV file.
+- Ensure the script has the necessary permissions to create OUs and users in Active Directory.
+- Execute the script in a PowerShell environment with the Active Directory module available.
 
 ### 3. Script Overview
 
