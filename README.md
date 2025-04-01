@@ -7,6 +7,15 @@ Easy peasy AD setting up and user injection
 This repository contains scripts to quickly and easily set up your Windows Server and Active Directory (AD). The scripts should be executed in the following order:
 
 ## 1. setting_up_srv.ps1:
+- Prompts for:
+
+    - hostname
+    - IP address
+    - Subnet prefix
+    - Default gateway
+    - DNS address
+
+- Performs the following actions: 
 
     - Renames the server.
     - Configures IP settings (IP address, subnet prefix, default gateway).
@@ -14,16 +23,18 @@ This repository contains scripts to quickly and easily set up your Windows Serve
     - Renames the network adapter.
     - Enables Remote Desktop and configures the firewall.
     - Prompts for a restart to apply changes.
-    - add_features.ps1:
+
 
 ## 2. add_features.ps1:
+- Installs the following features:
 
     - Active Directory Domain Services (ADDS)
     - DNS
     - Remote Server Administration Tools (RSAT)
-    - Forest_config.ps1:
 
 ## 3. forest_config.ps1
+- Configures the Active Directory forest
+- Prompts for: 
 
     - Domain Name (e.g., example.com)
     - Domain NetBios Name
