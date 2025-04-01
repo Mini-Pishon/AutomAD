@@ -58,7 +58,13 @@ This PowerShell script automates the creation of Organizational Units (OUs) and 
 - Ensure the Active Directory module is available on the system where the script is executed.
 - Prepare a CSV file (users.csv) with user data, including columns for first_name, last_name, and password.
 
-### 2. Script Overview
+### 2. Usage
+
+1. Place the users.csv file in the specified directory (C:\scripts\Ad_scripts\).
+2. Ensure the script has the necessary permissions to create OUs and users in Active Directory.
+3. Execute the script in a PowerShell environment with the Active Directory module available.
+
+### 3. Script Overview
 
 ####  1. Input
 
@@ -90,15 +96,15 @@ Sets the base path for OUs as DC=dinoland,DC=lan.
 - Checks for missing first name or last name and skips such entries.
 - Creates users with the specified attributes (name, email, password) if they do not already exist in AD.
 
-### 3. Error Handling
+### 4. Error Handling
 
 - The script includes error handling for OU and user creation, with warnings and a pause of 5 seconds for errors.
 
-### 4. Output
+### 5. Output
 
 - The script outputs the status of OU and user creation to the console, indicating success or any errors encountered.
 
-### 5. Usage
+### 6. Usage
 
 1. Place the users.csv file in the specified directory (C:\scripts\Ad_scripts\).
 2. Ensure the script has the necessary permissions to create OUs and users in Active Directory.
