@@ -60,32 +60,38 @@ This PowerShell script automates the creation of Organizational Units (OUs) and 
 
 ### 2. Script Overview
 
-####  Input
+####  1. Input
 
 - CSV File: The script reads user data from C:\scripts\Ad_scripts\users.csv. Ensure the file is in the correct format and accessible.
 
-####  Actions Performed
+####  2. Actions Performed
+
 - Import CSV Data:
     - Reads user data from the specified CSV file.
 
-#### Import Active Directory Module:
+#### 3. Import Active Directory Module:
 
-Imports the Active Directory module to manage AD operations.
-Define Base OU Path:
+- Imports the Active Directory module to manage AD operations.
+
+#### 4. Define Base OU Path:
 
 Sets the base path for OUs as DC=dinoland,DC=lan.
-Create Organizational Units (OUs):
 
-Creates the main OU "CORE" under the base path.
-Creates the "HUMANS" OU under "CORE".
-Creates "USERS" and "ADMIN" OUs under "HUMANS".
-Process CSV Data to Create Users:
+#### 5. Create Organizational Units (OUs):
 
-Iterates through the CSV data to create users in AD.
-Determines the target OU based on the user index (first 200 users go to "USERS", others to "ADMIN").
-Checks for missing first name or last name and skips such entries.
-Creates users with the specified attributes (name, email, password) if they do not already exist in AD.
-Error Handling
+- Creates the main OU "CORE" under the base path.
+- Creates the "HUMANS" OU under "CORE".
+- Creates "USERS" and "ADMIN" OUs under "HUMANS".
+
+#### 6. Process CSV Data to Create Users:
+
+- Iterates through the CSV data to create users in AD.
+- Determines the target OU based on the user index (first 200 users go to "USERS", others to "ADMIN").
+- Checks for missing first name or last name and skips such entries.
+- Creates users with the specified attributes (name, email, password) if they do not already exist in AD.
+
+### Error Handling
+
 The script includes error handling for OU and user creation, with warnings and a pause of 5 seconds for errors.
 Output
 The script outputs the status of OU and user creation to the console, indicating success or any errors encountered.
