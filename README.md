@@ -55,8 +55,8 @@ This PowerShell script automates the creation of Organizational Units (OUs) and 
 
 ### 1. Prerequisites
 
-    - Ensure the Active Directory module is available on the system where the script is executed.
-    - Prepare a CSV file (users.csv) with user data, including columns for first_name, last_name, and password.
+- Ensure the Active Directory module is available on the system where the script is executed.
+- Prepare a CSV file (users.csv) with user data, including columns for first_name, last_name, and password.
 
 ### 2. Script Overview
 
