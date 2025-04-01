@@ -66,7 +66,7 @@ This PowerShell script automates the creation of Organizational Units (OUs) and 
 
 ### 3. Script Overview
 
-#### - Input
+####    - Input
 
 - CSV File: The script reads user data from your .csv file. Ensure the file is in the correct format and accessible.
 
