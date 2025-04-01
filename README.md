@@ -60,14 +60,15 @@ This PowerShell script automates the creation of Organizational Units (OUs) and 
 
 ### 2. Script Overview
 
-#### - Input
-    - CSV File: The script reads user data from C:\scripts\Ad_scripts\users.csv. Ensure the file is in the correct format and accessible.
-#### - Actions Performed
-    - Import CSV Data:
+####  Input
 
+- CSV File: The script reads user data from C:\scripts\Ad_scripts\users.csv. Ensure the file is in the correct format and accessible.
+
+####  Actions Performed
+- Import CSV Data:
     - Reads user data from the specified CSV file.
 
-#### - Import Active Directory Module:
+#### Import Active Directory Module:
 
 Imports the Active Directory module to manage AD operations.
 Define Base OU Path:
