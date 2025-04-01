@@ -33,8 +33,15 @@ This repository contains scripts to quickly and easily set up your Windows Serve
     - Remote Server Administration Tools (RSAT)
 
 ## 3. forest_config.ps1
-- Configures the Active Directory forest
 - Prompts for: 
 
     - Domain Name (e.g., example.com)
     - Domain NetBios Name
+
+- Performs the following actions:
+
+    - Imports the ADDSDeployment module.
+    - Configures the forest with the specified domain name and NetBios name.
+    - Sets various forest configuration parameters such as database path, log    path, and sysvol path.
+    - Installs DNS as part of the forest configuration.
+    - Prevents automatic reboot upon completion.
