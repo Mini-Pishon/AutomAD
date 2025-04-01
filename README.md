@@ -16,13 +16,14 @@ This repository contains scripts to quickly and easily set up your Windows Serve
     - Prompts for a restart to apply changes.
     - add_features.ps1:
 
-## 2. Installs the following features:
+## 2. add_features.ps1:
+
     - Active Directory Domain Services (ADDS)
     - DNS
     - Remote Server Administration Tools (RSAT)
     - Forest_config.ps1:
 
-## 3. Configures the Active Directory forest.
-    - Prompts for:
+## 3. forest_config.ps1
+
     - Domain Name (e.g., example.com)
     - Domain NetBios Name
