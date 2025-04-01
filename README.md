@@ -104,8 +104,4 @@ Sets the base path for OUs as DC=dinoland,DC=lan.
 
 - The script outputs the status of OU and user creation to the console, indicating success or any errors encountered.
 
-### 6. Usage
 
-1. Place the users.csv file in the specified directory (C:\scripts\Ad_scripts\).
-2. Ensure the script has the necessary permissions to create OUs and users in Active Directory.
-3. Execute the script in a PowerShell environment with the Active Directory module available.
