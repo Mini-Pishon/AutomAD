@@ -45,3 +45,49 @@ This repository contains scripts to quickly and easily set up your Windows Serve
     - Sets various forest configuration parameters such as database path, log    path, and sysvol path.
     - Installs DNS as part of the forest configuration.
     - Prevents automatic reboot upon completion.
+
+
+# Injection
+
+## 1. AD_addusers.ps1
+
+This PowerShell script automates the creation of Organizational Units (OUs) and users in Active Directory (AD) based on data from a CSV file. The script performs the following actions:
+
+1. Prerequisites
+
+    - Ensure the Active Directory module is available on the system where the script is executed.
+    - Prepare a CSV file (users.csv) with user data, including columns for first_name, last_name, and password.
+
+2. Script Overview
+
+- Input
+    - CSV File: The script reads user data from C:\scripts\Ad_scripts\users.csv. Ensure the file is in the correct format and accessible.
+- Actions Performed
+    - Import CSV Data:
+
+Reads user data from the specified CSV file.
+Import Active Directory Module:
+
+Imports the Active Directory module to manage AD operations.
+Define Base OU Path:
+
+Sets the base path for OUs as DC=dinoland,DC=lan.
+Create Organizational Units (OUs):
+
+Creates the main OU "CORE" under the base path.
+Creates the "HUMANS" OU under "CORE".
+Creates "USERS" and "ADMIN" OUs under "HUMANS".
+Process CSV Data to Create Users:
+
+Iterates through the CSV data to create users in AD.
+Determines the target OU based on the user index (first 200 users go to "USERS", others to "ADMIN").
+Checks for missing first name or last name and skips such entries.
+Creates users with the specified attributes (name, email, password) if they do not already exist in AD.
+Error Handling
+The script includes error handling for OU and user creation, with warnings and a pause of 5 seconds for errors.
+Output
+The script outputs the status of OU and user creation to the console, indicating success or any errors encountered.
+Usage
+Place the users.csv file in the specified directory (C:\scripts\Ad_scripts\).
+Ensure the script has the necessary permissions to create OUs and users in Active Directory.
+Execute the script in a PowerShell environment with the Active Directory module available.
