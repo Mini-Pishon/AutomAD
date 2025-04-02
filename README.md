@@ -1,6 +1,7 @@
 # Cheap and Fast 
 
-This repository contains scripts to quickly and easily set up your Windows Server and Active Directory (AD). The scripts should be executed in the following order:
+This repository contains scripts to quickly and easily set up your Windows Server and Active Directory (AD). First, open `powershell.exe` and use `Set-ExecutionPolicy -Unrestricted`
+It's important to note that this setting reduces the security of your system by allowing all scripts to run. It might be beneficial to mention that this setting can be reverted to a more secure state after the scripts have been executed. Each script needs to be executed manually, one after the other. The scripts should be executed in the following order:
 
 ## 1. setting_up_srv.ps1:
 - Prompts for:
